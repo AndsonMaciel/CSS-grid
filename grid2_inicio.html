@@ -27,15 +27,19 @@
 
         .gridContainer {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 50px 50px 1fr 50px;
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-rows: 75px 50px 1fr 50px; */
             gap: 1em;
 
-            grid-template-areas:
+            /* grid-template-areas:
                 "header     header      header"
                 "nav        nav         aside"
                 "main       main        aside"
-                "footer     footer      .";
+                "footer     footer      ."; */
+
+            /* atalho grid template */
+            grid-template:
+                "header     header      header" 75px "nav        nav         aside" 50px "main       main        aside" 1fr "footer     footer      ." 50px / 1fr 1fr 1fr;
         }
 
         .header {
